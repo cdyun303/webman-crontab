@@ -1,5 +1,5 @@
 <?php
-namespace Cdyun\WebmanResponse;
+namespace Cdyun\WebmanCrontab;
 
 class Install
 {
