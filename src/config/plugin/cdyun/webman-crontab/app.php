@@ -3,7 +3,7 @@ return [
     'enable' => true,
     'crontab' => [
         // 监听地址
-        'listen' => true,
+        'listen' => 'http://127.0.0.1:2345',
         // 定时器密钥
         'safe_key' => 'cdyun2025',
         // 数据库ORM驱动，默认值tp

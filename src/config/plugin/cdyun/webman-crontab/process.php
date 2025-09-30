@@ -11,6 +11,6 @@ return [
     'crontab_task' => [
         'handler' => Task::class,
         'count' => 1,
-        'listen' => 'text://' . config('plugin.cdyun.webman-crontab.app.crontab.listen'),
+        'listen' => config('plugin.cdyun.webman-crontab.app.crontab.listen'),
     ]
 ];
