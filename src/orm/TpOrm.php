@@ -164,7 +164,7 @@ class TpOrm
   `rule` varchar(64) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT ''  COMMENT '任务表达式',
   `target` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL DEFAULT ''  COMMENT '执行脚本',
   `running_times` int(0) NOT NULL DEFAULT 0 COMMENT '已运行次数',
-  `last_time` datetime(0) NOT NULL COMMENT '最近运行时间',
+  `last_time` datetime(0) NULL DEFAULT NULL COMMENT '最近运行时间',
   `status` tinyint(4) NOT NULL DEFAULT 0 COMMENT '任务状态状态[0:禁用;1启用]',
   `op_name` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '' COMMENT '操作人',
   `create_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0) COMMENT '新增时间',
